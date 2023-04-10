@@ -4,6 +4,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>c88d6c7f-cf30-4acb-b0e6-30e76724caff</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AntDesign" Version="0.14.4" />
+    <PackageReference Include="Betalgo.OpenAI.GPT3" Version="6.8.3" />
+  </ItemGroup>
 
 </Project>

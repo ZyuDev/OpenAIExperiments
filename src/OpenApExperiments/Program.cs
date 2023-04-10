@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using OpenApExperiments.Data;
+using OpenApExperiments.Infrastructure;
 
 namespace Company.WebApplication1
 {
@@ -14,6 +15,17 @@ namespace Company.WebApplication1
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
             builder.Services.AddSingleton<WeatherForecastService>();
+
+            // Add ant Design
+            builder.Services.AddAntDesign();
+
+            // Access user secrets
+            var apiToken = builder.Configuration["apiToken"];
+            var settings = new AppSettings()
+            {
+                ApiToken = apiToken,
+            };
+            builder.Services.AddSingleton<IAppSettings>(settings);
 
             var app = builder.Build();
 

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ABE4A31A-0BD0-47F8-80B6-EFE5D60AB132}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenApExperiments", "src\OpenApExperiments\OpenApExperiments.csproj", "{0883CB5F-E5F5-45AE-AFC5-5CD645203565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenApExperiments", "src\OpenApExperiments\OpenApExperiments.csproj", "{0883CB5F-E5F5-45AE-AFC5-5CD645203565}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,29 @@
+﻿@page "/GenerateQuery"
+<h3>GenerateQueryTestPage</h3>
+<hr />
+<div class="row">
+    <div class="col-sm-4">
+        <Button Type="@ButtonType.Primary" OnClick="OnGoClick" >Completion</Button>
+        <Button Type="@ButtonType.Primary" OnClick="OnChatClick" >Chat</Button>
+    </div>
+</div>
+<hr/>
+<div class="row">
+
+    <div class="col-sm-12">
+        <TextArea @bind-Value="@_promptText" Rows=10 Style="width:100%"></TextArea>
+    </div>
+
+</div>
+
+<hr />
+
+<div class="row">
+
+    <div class="col-sm-12">
+        <TextArea @bind-Value="@_queryText" Rows=10 Disabled="true"></TextArea>
+    </div>
+
+</div>
+
+
